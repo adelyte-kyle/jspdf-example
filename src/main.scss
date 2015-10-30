@@ -1,0 +1,40 @@
+body {
+  background-color: hsla(200, 19%, 18%, 1);
+  color: hsla(174, 42%, 65%, 1);
+  font-family: 'Fira Mono';
+  font-size: 16pt;
+}
+
+input {
+  font-family: 'Fira Mono';
+}
+
+.add-todo {
+  input {
+    font-size: 32px;
+    width: 100%;
+    height: 32px + 16px;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+}
+
+.status-done {
+  color: hsla(200, 18%, 46%, 1);
+}
+
+.status-todo {
+  color: hsla(174, 42%, 65%, 1);
+}
+
+.todo-item {
+  list-style: none;
+}
+
+#todo-list {
+  // NOTE: Note sure which of these I should use...
+  padding: 5%; //32px;
+  margin: 0;
+}
