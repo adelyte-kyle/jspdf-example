@@ -1,2 +1,1 @@
-# accountable-todo
-An Accountability TODO list "app"
+# jsPDF Example Repo
