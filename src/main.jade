@@ -1,7 +1,14 @@
-doctype
+doctype html
 html
   head
     title JSPDF Example
+    script(type='text/javascript', src='main.js')
   body
-    h1 This is a test of jsPDF.
-    script(src="./main.js")
+    h1 This is Kyle killing it!
+    select#car-make
+      option(value='volvo') Volvo
+      option(value='saab') Saab
+      option(value='mercedes') Mercedes
+      option(value='audi') Audi
+    button(type='button', onclick='kyleIsBoss()') Download PDF
+
