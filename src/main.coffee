@@ -1,6 +1,9 @@
 pdf = require 'jspdf'
 
-doc = new pdf()
-doc.text(20, 20, 'Hello, World')
+window.kyleIsBoss = () ->
+  doc = new pdf()
 
-doc.save()
+  carMake = document.getElementById('car-make').value
+  doc.text(20, 20, 'Car Make: ' + carMake)
+
+  doc.save()
