@@ -4,11 +4,49 @@ html
     title Proposal Generator
   body#app
     h1 Adelyte Proposal Generator
-    select(v-model="selected.processor")
-      option(v-for="processor in processors" v-bind:value="processor") {{ processor.name }}
-    span Selected Processor: {{ selected.processor ? selected.processor.name : 'None'}}
+    
+    select(v-model="Interface")
+      option(v-for="interface in interfaces" v-bind:value="interface") {{ interface.model }}
+    span Interface: {{ Interface.model }}
+    br
+
+    select(v-model="Processor")
+      option(v-for="processor in processors" v-bind:value="processor") {{ processor.model }}
+    span Processor: {{ Processor.model }}
+    br
+    
+    select(v-model="Video_Distributor")
+      option(v-for="video_distributor in video_distributors" v-bind:value="video_distributor") {{ video_distributor.model }}
+    span Video Distributor: {{ Video_Distributor.model }}
+    br
+
+    select(v-model="Audio_Processor")
+      option(v-for="audio_processor in audio_processors" v-bind:value="audio_processor") {{ audio_processor.model }}
+    span Audio Processor: {{ Audio_Processor.model }}
+    br
+    
+    select(v-model="Video_Display")
+      option(v-for="video_display in video_displays" v-bind:value="video_display") {{ video_display.make }}
+    span Video_Display: {{ Video_Display.make }}
+    br
+
+    select(v-model="Source")
+      option(v-for="source in sources" v-bind:value="source") {{ source.make }}
+    span Source: {{ Source.make }}
+    br
+
+    select(v-model="Device")
+      option(v-for="device in devices" v-bind:value="device") {{ device.make }}
+    span Device: {{ Device.make }}
+    br
+
     button(@click='downloadPDF()') Download PDF
 
     //- NOTE: Keep this script at the bottom!
     script(type='text/javascript', src='main.js')
 
+      //- currentObject = foo.a
+      //- currentObject === foo.a => true
+      //- for selection of currentObject
+      //-   conosle.log selection => {name:'a', cost:100}
+                                //- => {name:'nvidia', barheight:1000}  <-- this is from 'bar in bars'?
