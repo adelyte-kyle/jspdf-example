@@ -25,9 +25,9 @@ module.exports = ->
     { make: "Crestron", model: "SWAMP-8x8", price: 100}
     { make: "Crestron", model: "SWAMP-6x4", price: 50}
   ]
-  Video_Display: { make: "Digital Projections", model: "4K Dual-LED Projector\"", price: 135000}
+  Video_Display: { make: "Digital Projections", model: "4K Dual-LED Projector", price: 135000}
   video_displays: [
-    { make: "Digital Projections", model: "4K Dual-LED Projector\"", price: 135000}
+    { make: "Digital Projections", model: "4K Dual-LED Projector", price: 135000}
     { make: "LG", model: "64\"", price: 50}
     { make: "Samsung", model: "84\"", price: 100}
     { make: "Sony", model: "4K 48\"", price: 175}
